@@ -32,9 +32,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Begin"
-        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
         android:textColor="@color/colorAccent"
-        android:textSize="56sp"
+        android:textSize="64sp"
         android:typeface="serif"
         app:fontFamily="@font/ruthie"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,15 +60,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.82" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="328dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ruthie"
+        android:text="What's Your Alignment?"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="@color/colorAccent"
+        android:textSize="74sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
     <Button
         android:id="@+id/beginButton2"
         android:layout_width="206dp"
         android:layout_height="152dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:textAllCaps="false"
@@ -80,24 +99,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="328dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="What's Your Alignment?"
-        android:textAppearance="@android:style/TextAppearance.Material"
-        android:textColor="@color/colorAccent"
-        android:textSize="58sp"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
 
 </android.support.constraint.ConstraintLayout>
