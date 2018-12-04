@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizScreen">
+    tools:context=".SavedResultsScreen">
 
     <ImageView
-        android:id="@+id/paperBackground"
-        android:layout_width="446dp"
+        android:id="@+id/paperBackground2"
+        android:layout_width="450dp"
         android:layout_height="616dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
@@ -20,27 +20,25 @@
         app:layout_constraintVertical_bias="0.842"
         app:srcCompat="@drawable/paper" />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="157dp"
-        android:layout_height="88dp"
+    <TextView
+        android:id="@+id/savedResultsTitle"
+        android:layout_width="292dp"
+        android:layout_height="94dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="13dp"
-        android:background="@drawable/goldborder"
-        android:fontFamily="@font/almendra"
-        android:text="Next"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="56sp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ruthie"
+        android:text="Saved Result"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.04000002" />
 
     <Button
-        android:id="@+id/homeButton"
+        android:id="@+id/homeButton2"
         android:layout_width="79dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
@@ -57,7 +55,7 @@
         app:layout_constraintVertical_bias="0.965" />
 
     <Button
-        android:id="@+id/musicOnButton"
+        android:id="@+id/musicOnButton3"
         android:layout_width="83dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
@@ -73,74 +71,56 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.983" />
 
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="157dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/goldborder"
+        android:fontFamily="@font/almendra"
+        android:text="Delete"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002"
+        app:srcCompat="@drawable/dwarf" />
+
     <TextView
-        android:id="@+id/quizQuestionText"
-        android:layout_width="292dp"
-        android:layout_height="154dp"
+        android:id="@+id/alignment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/almendra"
-        android:text="Which selection, A or B?"
-        android:textSize="40sp"
+        android:text="True Neutral"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.120000005" />
-
-    <RadioGroup
-        android:id="@+id/questionGrouping"
-        android:layout_width="210dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/paperBackground"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004">
-
-        <RadioButton
-            android:id="@+id/aAnswer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/almendra"
-            android:text="Option A"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.196"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.454" />
-
-        <RadioButton
-            android:id="@+id/bAnswer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/almendra"
-            android:text="Option B"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.195"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.659" />
-
-    </RadioGroup>
+        app:layout_constraintVertical_bias="0.78" />
 
 </android.support.constraint.ConstraintLayout>

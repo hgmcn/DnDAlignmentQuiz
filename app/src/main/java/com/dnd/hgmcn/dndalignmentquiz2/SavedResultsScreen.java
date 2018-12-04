@@ -7,43 +7,43 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class ResultScreen extends AppCompatActivity {
-    public Button homeButton3;
-    public Button musicOnButton2;
-    public Button saveButton;
+public class SavedResultsScreen extends AppCompatActivity {
+    public Button homeButton2;
+    public Button musicOnButton3;
+    public Button deleteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_screen);
+        setContentView(R.layout.activity_saved_results_screen);
 
-        homeButton3 = findViewById(R.id.homeButton3);
-        homeButton3.setOnClickListener(new View.OnClickListener() {
+        homeButton2 = findViewById(R.id.homeButton2);
+        homeButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewStartScreen();
             }
         });
-        musicOnButton2 = findViewById(R.id.musicOnButton2);
-        musicOnButton2.setOnClickListener(new View.OnClickListener() {
+        musicOnButton3 = findViewById(R.id.musicOnButton3);
+        musicOnButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean pressed = false;
-                if (v == musicOnButton2 && pressed == false) {
-                    musicOnButton2.setBackgroundResource(R.drawable.mute);
+                if (v == musicOnButton3 && pressed == false) {
+                    musicOnButton3.setBackgroundResource(R.drawable.mute);
                     pressed = true;
                 }
-                if (v == musicOnButton2 && pressed == true) {
-                    musicOnButton2.setBackgroundResource(R.drawable.volume);
+                if (v == musicOnButton3 && pressed == true) {
+                    musicOnButton3.setBackgroundResource(R.drawable.volume);
                     pressed = false;
                 }
             }
         });
-        saveButton = findViewById(R.id.saveButton);
-        saveButton.setOnClickListener(new View.OnClickListener() {
+        deleteButton = findViewById(R.id.deleteButton);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("saveTag", "Save button has been pressed.");
+                Log.d("deleteTag", "delete button has been pressed.");
             }
         });
     }

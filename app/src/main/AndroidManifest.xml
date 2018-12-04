@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar">
-
         <activity
             android:name=".NewStartScreen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -26,6 +25,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <activity android:name=".SavedResultsScreen" />
+        <activity android:name=".DnDScreen"></activity>
     </application>
 
 </manifest>
