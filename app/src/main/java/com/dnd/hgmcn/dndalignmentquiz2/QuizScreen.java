@@ -1,5 +1,6 @@
 package com.dnd.hgmcn.dndalignmentquiz2;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,11 +9,12 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class QuizScreen extends AppCompatActivity {
+public class QuizScreen extends Activity {
     public Button homeButton;
     public Button musicOnButton;
     public Button nextButton;
     public RadioGroup questionGrouping;
+    public boolean pressed = false;
     //public RadioButton choice;
 
     @Override
@@ -33,12 +35,10 @@ public class QuizScreen extends AppCompatActivity {
         musicOnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean pressed = false;
-                if (v == musicOnButton && pressed == false) {
+                if (!pressed) {
                     musicOnButton.setBackgroundResource(R.drawable.mute);
                     pressed = true;
-                }
-                if (v == musicOnButton && pressed == true) {
+                } else {
                     musicOnButton.setBackgroundResource(R.drawable.volume);
                     pressed = false;
                 }
