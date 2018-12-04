@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-    tools:context=".StartScreen">
+    tools:context=".NewStartScreen">
 
     <ImageView
-        android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="509dp"
+        android:id="@+id/imageView"
+        android:layout_width="446dp"
+        android:layout_height="624dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/book"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/book" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <TextView
         android:id="@+id/textView"
@@ -41,10 +43,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <ImageView
-        android:id="@+id/goldBorder"
+        android:id="@+id/goldBorder2"
         android:layout_width="223dp"
         android:layout_height="217dp"
         android:layout_marginStart="8dp"
@@ -61,7 +63,7 @@
         app:srcCompat="@drawable/goldborder" />
 
     <Button
-        android:id="@+id/beginButton"
+        android:id="@+id/beginButton2"
         android:layout_width="206dp"
         android:layout_height="152dp"
         android:layout_marginStart="8dp"
@@ -79,28 +81,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <TextView
-        android:id="@+id/startTitle"
-        android:layout_width="290dp"
-        android:layout_height="223dp"
+        android:id="@+id/textView5"
+        android:layout_width="275dp"
+        android:layout_height="169dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="What's your alignment?"
-        android:textColor="@color/colorAccent"
-        android:textSize="78sp"
-        app:fontFamily="@font/ruthie"
+        android:text="What's Your Alignment?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.18" />
 
 </android.support.constraint.ConstraintLayout>
