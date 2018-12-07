@@ -91,9 +91,9 @@
         app:layout_constraintVertical_bias="0.120000005" />
 
     <RadioGroup
-        android:id="@+id/questionGrouping"
-        android:layout_width="210dp"
-        android:layout_height="190dp"
+        android:id="@+id/choice"
+        android:layout_width="238dp"
+        android:layout_height="233dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -133,6 +133,25 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/almendra"
             android:text="Option B"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.659" />
+
+        <RadioButton
+            android:id="@+id/cAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/almendra"
+            android:text="Option C"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

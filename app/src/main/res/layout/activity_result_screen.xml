@@ -50,7 +50,7 @@
 
     <TextView
         android:id="@+id/resultTitle"
-        android:layout_width="260dp"
+        android:layout_width="311dp"
         android:layout_height="79dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="8dp"
@@ -58,7 +58,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ruthie"
         android:text="Your Alignment"
-        android:textSize="56sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

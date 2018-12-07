@@ -35,7 +35,7 @@
         android:textAllCaps="false"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="@color/colorAccent"
-        android:textSize="68sp"
+        android:textSize="60sp"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

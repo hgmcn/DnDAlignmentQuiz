@@ -30,7 +30,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ruthie"
         android:text="What is DnD?"
-        android:textSize="56sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
