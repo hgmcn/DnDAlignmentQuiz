@@ -23,7 +23,7 @@ public class NewStartScreen extends Activity {
     /** Code added while setting up Spotify. */
 
     private static final String CLIENT_ID = "3d956635503d420abb4a8dc59cf4d5aa";
-    private static final String REDIRECT_URI = "https://dndalignmentquiz.com/callback/";
+    private static final String REDIRECT_URI = "testschema://callback";
     private SpotifyAppRemote mSpotifyAppRemote;
 
     @Override
@@ -71,14 +71,14 @@ public class NewStartScreen extends Activity {
                     @Override
                     public void onConnected(SpotifyAppRemote spotifyAppRemote) {
                         mSpotifyAppRemote = spotifyAppRemote;
-                        Log.d("MainActivity", "Connected! Yay!");
+                        Log.d("NewStartScreen", "Connected! Yay!");
 
                         connected();
                     }
 
                     @Override
                     public void onFailure(Throwable throwable) {
-                        Log.e("MainActivity", throwable.getMessage(), throwable);
+                        Log.e("NewStartScreen", throwable.getMessage(), throwable);
                     }
                 });
     }

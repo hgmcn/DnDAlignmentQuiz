@@ -9,7 +9,7 @@ import com.spotify.protocol.types.PlayerState;
 import com.spotify.protocol.types.Track;
 
 public class QuizMechanics {
-    {"questionList":[
+    /** {"questionList":[
         "Question 1",
         "Question 2",
         "Question 3",
@@ -22,4 +22,5 @@ public class QuizMechanics {
         "Question 10"
         ]
     }
+     */
 }
