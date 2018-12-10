@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.spotify.android.appremote.api.ConnectionParams;
 import com.spotify.android.appremote.api.Connector;
@@ -24,11 +25,16 @@ public class QuizScreen extends Activity {
     public Button nextButton;
     public boolean pressed = false;
     public RadioGroup choice;
+    public TextView quizQuestionText;
+    public int current = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_screen);
+
+        quizQuestionText = findViewById(R.id.quizQuestionText);
+        quizQuestionText.setText(QuizMechanics.questions[0]);
 
         homeButton = findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +60,13 @@ public class QuizScreen extends Activity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openResultScreen();
+                current++;
+                if (current < 30) {
+                    quizQuestionText.setText(QuizMechanics.questions[current]);
+                }
+                else {
+                    openResultScreen();
+                }
             }
         });
         choice = findViewById(R.id.choice);

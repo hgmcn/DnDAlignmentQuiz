@@ -6,6 +6,14 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.dnd.hgmcn.dndalignmentquiz2.NewStartScreen;
+import com.dnd.hgmcn.dndalignmentquiz2.DnDScreen;
+import com.dnd.hgmcn.dndalignmentquiz2.QuizMechanics;
+import com.dnd.hgmcn.dndalignmentquiz2.QuizScreen;
+import com.dnd.hgmcn.dndalignmentquiz2.ResultScreen;
+import com.dnd.hgmcn.dndalignmentquiz2.SavedResultsScreen;
 
 import com.spotify.android.appremote.api.ConnectionParams;
 import com.spotify.android.appremote.api.Connector;
