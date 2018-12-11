@@ -66,7 +66,7 @@ public class DnDScreen extends Activity {
 
 
 
-        
+
     }
     public void openNewStartScreen() {
         Intent intent = new Intent(this, NewStartScreen.class);

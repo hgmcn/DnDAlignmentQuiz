@@ -1,13 +1,5 @@
 package com.dnd.hgmcn.dndalignmentquiz2;
 
-import com.spotify.android.appremote.api.ConnectionParams;
-import com.spotify.android.appremote.api.Connector;
-import com.spotify.android.appremote.api.SpotifyAppRemote;
-
-import com.spotify.protocol.client.Subscription;
-import com.spotify.protocol.types.PlayerState;
-import com.spotify.protocol.types.Track;
-
 public class QuizMechanics {
     public static String[] questions = {
             "Duck, goose, or chicken?",
