@@ -74,7 +74,7 @@
         android:background="@drawable/goldborder"
         android:fontFamily="@font/almendra"
         android:lineSpacingExtra="-20sp"
-        android:text="Saved Result"
+        android:text="Chart"
         android:textColor="@color/colorAccent"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"

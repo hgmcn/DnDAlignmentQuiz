@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.spotify.android.appremote.api.ConnectionParams;
 import com.spotify.android.appremote.api.Connector;
@@ -21,6 +22,7 @@ public class SavedResultsScreen extends Activity {
     public Button musicOnButton3;
     public Button deleteButton;
     public boolean pressed = false;
+    public TextView savedResultText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +47,6 @@ public class SavedResultsScreen extends Activity {
                     musicOnButton3.setBackgroundResource(R.drawable.volume);
                     pressed = false;
                 }
-            }
-        });
-        deleteButton = findViewById(R.id.deleteButton);
-        deleteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("deleteTag", "delete button has been pressed.");
             }
         });
     }

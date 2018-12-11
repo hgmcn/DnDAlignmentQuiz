@@ -30,6 +30,7 @@ public class ResultScreen extends Activity {
     public Button saveButton;
     public boolean pressed = false;
     public TextView result;
+    public static TextView saveItPlease;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,7 @@ public class ResultScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d("saveTag", "Save button has been pressed.");
+                saveItPlease = result;
             }
         });
     }
