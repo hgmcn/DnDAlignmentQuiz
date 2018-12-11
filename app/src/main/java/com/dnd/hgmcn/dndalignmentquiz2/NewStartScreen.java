@@ -112,4 +112,7 @@ public class NewStartScreen extends Activity {
         Intent intent = new Intent(this, DnDScreen.class);
         startActivity(intent);
     }
+    public void playMusic() {
+
+    }
 }
