@@ -19,10 +19,7 @@ import com.spotify.protocol.types.Track;
 
 public class SavedResultsScreen extends Activity {
     public Button homeButton2;
-    public Button musicOnButton3;
-    public Button deleteButton;
     public boolean pressed = false;
-    public TextView savedResultText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +31,6 @@ public class SavedResultsScreen extends Activity {
             @Override
             public void onClick(View v) {
                 openNewStartScreen();
-            }
-        });
-        musicOnButton3 = findViewById(R.id.musicOnButton3);
-        musicOnButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!pressed) {
-                    musicOnButton3.setBackgroundResource(R.drawable.mute);
-                    pressed = true;
-                } else {
-                    musicOnButton3.setBackgroundResource(R.drawable.volume);
-                    pressed = false;
-                }
             }
         });
     }

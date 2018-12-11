@@ -42,21 +42,31 @@ public class DnDScreen extends Activity {
                 openNewStartScreen();
             }
         });
-        musicOnButton4 = findViewById(R.id.musicOnButton4);
-        musicOnButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v == musicOnButton4) {
-                    if (!pressed) {
-                        musicOnButton4.setBackgroundResource(R.drawable.mute);
-                        pressed = true;
-                    } else {
-                        musicOnButton4.setBackgroundResource(R.drawable.volume);
-                        pressed = false;
-                    }
-                }
-            }
-        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }
     public void openNewStartScreen() {
         Intent intent = new Intent(this, NewStartScreen.class);

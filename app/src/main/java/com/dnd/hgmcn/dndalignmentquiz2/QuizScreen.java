@@ -59,19 +59,6 @@ public class QuizScreen extends Activity {
                 openNewStartScreen();
             }
         });
-        musicOnButton = findViewById(R.id.musicOnButton);
-        musicOnButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!pressed) {
-                    musicOnButton.setBackgroundResource(R.drawable.mute);
-                    pressed = true;
-                } else {
-                    musicOnButton.setBackgroundResource(R.drawable.volume);
-                    pressed = false;
-                }
-            }
-        });
         nextButton = findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override

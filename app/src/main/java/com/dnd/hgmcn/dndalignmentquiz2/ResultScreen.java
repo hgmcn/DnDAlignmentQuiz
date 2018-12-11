@@ -26,7 +26,6 @@ import com.dnd.hgmcn.dndalignmentquiz2.SavedResultsScreen;
 
 public class ResultScreen extends Activity {
     public Button homeButton3;
-    public Button musicOnButton2;
     public boolean pressed = false;
     public TextView result;
 
@@ -55,25 +54,11 @@ public class ResultScreen extends Activity {
         } else if (QuizScreen.chaoticScore >= -25 && QuizScreen.evilScore >= 25) {
             result.setText("Chaotic Evil");
         }
-
         homeButton3 = findViewById(R.id.homeButton3);
         homeButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewStartScreen();
-            }
-        });
-        musicOnButton2 = findViewById(R.id.musicOnButton2);
-        musicOnButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!pressed) {
-                    musicOnButton2.setBackgroundResource(R.drawable.mute);
-                    pressed = true;
-                } else {
-                    musicOnButton2.setBackgroundResource(R.drawable.volume);
-                    pressed = false;
-                }
             }
         });
     }
