@@ -24,8 +24,15 @@ public class QuizScreen extends Activity {
     public Button nextButton;
     public boolean pressed = false;
     public RadioGroup choice;
+    public RadioButton firstChoice;
+    public RadioButton secondChoice;
+    public RadioButton thirdChoice;
     public TextView quizQuestionText;
     public int current = 0;
+    public int chaoticAddition = 0;
+    public int evilAddition =  0;
+    public static int chaoticScore = 0;
+    public static int evilScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +41,16 @@ public class QuizScreen extends Activity {
 
         quizQuestionText = findViewById(R.id.quizQuestionText);
         quizQuestionText.setText(QuizMechanics.questions[0]);
+
+        firstChoice = findViewById(R.id.aAnswer); //
+        secondChoice = findViewById(R.id.bAnswer); //
+        thirdChoice = findViewById(R.id.cAnswer); //
+        firstChoice.setText(QuizMechanics.choices[0][0]);
+        secondChoice.setText(QuizMechanics.choices[0][1]);
+        thirdChoice.setText(QuizMechanics.choices[0][2]);
+
+        chaoticScore = 0;
+        evilScore =  0;
 
         homeButton = findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -62,9 +79,38 @@ public class QuizScreen extends Activity {
                 current++;
                 if (current < 30) {
                     quizQuestionText.setText(QuizMechanics.questions[current]);
+                    firstChoice.setText(QuizMechanics.choices[current][0]);
+                    secondChoice.setText(QuizMechanics.choices[current][1]);
+                    thirdChoice.setText(QuizMechanics.choices[current][2]);
+                    if (current < 15) {
+                        if (firstChoice.isChecked()) {
+                            chaoticAddition = 5;
+                        }
+                        if (secondChoice.isChecked()) {
+                            chaoticAddition = 0;
+                        }
+                        if (thirdChoice.isChecked()) {
+                            chaoticAddition = -5;
+                        }
+                        chaoticScore += chaoticAddition;
+                    }
+                    if (current >= 15) {
+                        if (firstChoice.isChecked()) {
+                            evilAddition = 5;
+                        }
+                        if (secondChoice.isChecked()) {
+                            evilAddition = 0;
+                        }
+                        if (thirdChoice.isChecked()) {
+                            evilAddition = -5;
+                        }
+                        evilScore += evilAddition;
+                    }
                 }
                 else {
                     openResultScreen();
+                    System.out.println("Chaotic score is " + chaoticScore);
+                    System.out.println("Evil score is " + evilScore);
                 }
             }
         });

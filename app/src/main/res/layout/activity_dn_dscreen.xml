@@ -30,6 +30,7 @@
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ruthie"
         android:text="What is DnD?"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,16 +74,21 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="295dp"
-        android:layout_height="321dp"
+        android:layout_width="333dp"
+        android:layout_height="336dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/almendra"
-        android:text="Here we will have an explanation of DnD and information about the different alignments/"
-        android:textSize="38sp"
+        android:text="  DnD is a collaborative storytelling game that relies on a loose set of rules, letting events be determined by chance and personal choice. Players roleplay in a medieval fantasy setting by creating characters with alignments, which are core  values that determine how characters interact with
+the world. For example, a chaotic evil character may bring destruction to anyone that crosses his/her path."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
 </android.support.constraint.ConstraintLayout>
