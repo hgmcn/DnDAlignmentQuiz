@@ -50,40 +50,21 @@
 
     <TextView
         android:id="@+id/resultTitle"
-        android:layout_width="311dp"
+        android:layout_width="291dp"
         android:layout_height="79dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/ruthie"
+        android:fontFamily="cursive"
         android:text="Your Alignment"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="40sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="157dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="13dp"
-        android:background="@drawable/goldborder"
-        android:fontFamily="@font/almendra"
-        android:text="Save It"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="42sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <Button
         android:id="@+id/musicOnButton2"
@@ -127,7 +108,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/almendra"
+        android:fontFamily="serif"
         android:text="True Neutral"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"

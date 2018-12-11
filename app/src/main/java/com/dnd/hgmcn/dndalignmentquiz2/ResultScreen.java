@@ -27,10 +27,8 @@ import com.dnd.hgmcn.dndalignmentquiz2.SavedResultsScreen;
 public class ResultScreen extends Activity {
     public Button homeButton3;
     public Button musicOnButton2;
-    public Button saveButton;
     public boolean pressed = false;
     public TextView result;
-    public static TextView saveItPlease;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,14 +74,6 @@ public class ResultScreen extends Activity {
                     musicOnButton2.setBackgroundResource(R.drawable.volume);
                     pressed = false;
                 }
-            }
-        });
-        saveButton = findViewById(R.id.saveButton);
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("saveTag", "Save button has been pressed.");
-                saveItPlease = result;
             }
         });
     }

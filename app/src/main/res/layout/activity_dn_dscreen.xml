@@ -22,21 +22,21 @@
 
     <TextView
         android:id="@+id/resultTitle2"
-        android:layout_width="306dp"
-        android:layout_height="79dp"
+        android:layout_width="344dp"
+        android:layout_height="88dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/ruthie"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="cursive"
         android:text="What is DnD?"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="48sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <Button
         android:id="@+id/homeButton4"
@@ -80,15 +80,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/almendra"
-        android:text="  DnD is a collaborative storytelling game that relies on a loose set of rules, letting events be determined by chance and personal choice. Players roleplay in a medieval fantasy setting by creating characters with alignments, which are core  values that determine how characters interact with
+        android:fontFamily="serif"
+        android:text="      DnD is a collaborative storytelling game that relies on a loose set of rules, letting events be determined by chance and personal choice. Players roleplay in a medieval fantasy setting by creating characters with alignments, which are core  values that determine how characters interact with
 the world. For example, a chaotic evil character may bring destruction to anyone that crosses his/her path."
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="21sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.558" />
+        app:layout_constraintVertical_bias="0.49" />
 </android.support.constraint.ConstraintLayout>

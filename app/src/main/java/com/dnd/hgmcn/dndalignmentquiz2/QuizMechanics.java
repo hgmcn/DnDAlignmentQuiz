@@ -37,7 +37,7 @@ public class QuizMechanics {
             "Which earth is best?",
             "What do you call a bag that you wear on your back?",
             "Scream.",
-            "What would you do if you found a squirrel in your home?",
+            "What would you do if you found a squirrel at home?",
             "Pick an animal with antlers.",
             "What kind of phone do you have?"
     };
@@ -49,7 +49,7 @@ public class QuizMechanics {
             {"Myers-Briggs", "Horoscopes", "Neither"},
             {"Completionist", "Speed-Run", "Cheating"},
             {"Yee-haw", "Yee-naw", "Yee-wah"},
-            {"Scrabble", "CAH", "Magic: The Gathering"},
+            {"Scrabble", "CAH", "Catan"},
             {":)", ";P", ":3"},
             {"Spinning", "Rocking", "Cozy"},
             {"Shrek", "Emoji Movie", "Neither"},
@@ -69,7 +69,7 @@ public class QuizMechanics {
             {"Flat", "Spherical", "Polyhedral"},
             {"Backpack", "Knapsack", "Book Bag"},
             {"Ahhhhhhh", "Aaaaaaah", "Aaaahhhh"},
-            {"Keep It", "Chase It Away", "Call Animal Control"},
+            {"Keep It", "Chase It Away", "Feed It"},
             {"Moose", "Reindeer", "Deer"},
             {"iPhone", "Android", "Windows"}
     };

@@ -92,7 +92,7 @@ public class NewStartScreen extends Activity {
     }
 
     private void connected() {
-        mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DX2sUQwD7tbmL");
+        mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:4l9xwTrNkrC5Zbdfz2c12n?si=OWldhuRLQCSDdH7QmWEFfA");
     }
 
     @Override
